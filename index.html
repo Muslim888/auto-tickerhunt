@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8">
+<script>
+  const cfg = new URLSearchParams(location.search).get('cfg');
+  if (cfg) location.href = `v2raytun://import/${cfg}#X%20VPN`;
+  else     document.body.textContent = 'missing cfg';
+</script>
